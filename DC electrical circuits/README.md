@@ -11,7 +11,6 @@
 4. Read the ambient temperature t0.
 
 <br>
-<br>
 Testing of the resistor Rt = 100 Ω ± 10 Ω 
 
 ![Photo1](images/photo1.png)
@@ -23,5 +22,6 @@ Ir - resistor current [A] <br>
 R - electrical resistance [Ω] <br>
 
 
+
 <br>
-The original text on the charts was in Polish. The sentences were translated using online translators.
+The original text was in Polish. The task was translated using online translators.

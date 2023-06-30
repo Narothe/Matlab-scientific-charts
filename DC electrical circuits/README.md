@@ -1,10 +1,10 @@
 # Author: Narothe
 
-## Purpose of the exercise:
+### Purpose of the exercise:
 1. To check Ohm's law.
 2. To determine the temperature of the filament of the bulb.
 
-## Course of the exercise:
+### Course of the exercise:
 1. Assemble a circuit consisting of a resistor, an ammeter (200 mA range), and a voltmeter (20 V range).
 2. Vary the voltage U (0 - 6 V) and read the intensity I. Make an accurate note of ΔU and ΔI.
 3. Change the resistor to an incandescent bulb and carry out analogous measurements.

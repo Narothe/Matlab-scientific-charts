@@ -10,6 +10,10 @@
 3. Change the resistor to an incandescent bulb and carry out analogous measurements.
 4. Read the ambient temperature t0.
 
+### Required physical formulas
+1. alpha value:
+![Alpha](images/alpha.gif)
+
 <br>
 Testing of the resistor Rt = 100 Ω ± 10 Ω 
 

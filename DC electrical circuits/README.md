@@ -1,14 +1,18 @@
-# Author: Narothe
+# Author of the solution: Narothe
 
 ### Purpose of the exercise:
 1. To check Ohm's law.
 2. To determine the temperature of the filament of the bulb.
+
+<br>
 
 ### Course of the exercise:
 1. Assemble a circuit consisting of a resistor, an ammeter (200 mA range), and a voltmeter (20 V range).
 2. Vary the voltage U (0 - 6 V) and read the intensity I. Make an accurate note of ΔU and ΔI.
 3. Change the resistor to an incandescent bulb and carry out analogous measurements.
 4. Read the ambient temperature t0.
+
+<br>
 
 ### Input data:
 1. Alpha value: <br>
@@ -19,6 +23,8 @@
 
 3. Resistance of the resistor / bulb: <br>
 ![r0](images/r0.gif)
+
+<br>
 
 ### Required physical formulas:
 1. Average resistance: <br>
@@ -31,17 +37,32 @@
 ![r](images/r.gif)
 
 <br>
+
 Testing of the resistor Rt = 100 Ω ± 10 Ω 
 
 ![Photo1](images/photo1.png)
 
 Where: <br>
+Nr. - ordinal order <br>
 Uz - bulb voltage [V] <br>
 Ur - resistor voltage [V] <br>
-Ir - resistor current [A] <br>
+Ir - resistor current [mA] <br>
 R - electrical resistance [Ω] <br>
 
+<br>
 
+Bulb test
+
+![Photo2](images/photo2.png)
+
+Where: <br>
+Nr. - ordinal order <br>
+Uz - bulb voltage [V] <br>
+Ur - resistor voltage [V] <br>
+Ir - resistor current [mA] <br>
+R - electrical resistance [Ω] <br>
+t - temperature [°C]
 
 <br>
+
 The original text was in Polish. The task was translated using online translators.

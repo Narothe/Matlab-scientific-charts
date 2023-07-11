@@ -91,7 +91,7 @@ R = round(R, 2);
 % % display of result
 disp(R);
 ```
-The result:
+### The result:
 
 ![problem1_solution](images/problem1_solution.png)
 
@@ -139,12 +139,94 @@ fprintf("Average of Ur: %f\n", average_Ur_resistor);
 fprintf("Average of the resistor: %f\n", average_resistor);
 ```
 
-The result:
+### The result:
 
 ![problem2_solution](images/problem2_solution.png)
 
+<br>
+
+## Third problem: measurement relationships
+
+### Linear regression of the voltage-amperage relationship for a resistor
+
+At this stage we start drawing graphs. 
 
 <br>
+
+We want to show on the graph the relationship between the electric voltage "Ur[V]" and the electric current "Ir[A]". 
+
+### Solution:
+
+```matlab
+% % /===========================\
+% % | MEASUREMENT RELATIONSHIPS |
+% % \===========================/
+
+% % Linear regression of the voltage-amperage relationship for a resistor
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+% % U - electrical voltage [V]
+% % I - electric current [mA]
+Ur = [0.60 1.09 1.57 2.06 2.55 3.04 3.52 4.02 4.51 4.96 5.48 5.93 6.43 6.92 7.41 7.87 8.37 8.84 9.31 9.82 10.30 10.78 11.27 11.73];
+Ir = [6.00 11.00 15.90 20.90 25.90 30.80 35.70 40.70 45.70 50.20 55.40 60.00 64.90 69.90 74.90 79.50 84.40 89.10 93.90 99.00 103.70 108.50 113.30 117.90];
+
+% % plot drawing
+axes('FontSize', 20, 'NextPlot', 'add');
+grid on
+
+% %  creates a scatter plot with circular markers at the locations specified by the vectors x and y.
+scatter(Ir, Ur, Color='k', LineWidth=2)
+
+% % captions for the graph
+title('Voltage-amperage relationship graph for a resistor', 'FontSize',22);
+xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
+ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
+```
+
+### The result:
+
+![problem3_graph1](images/problem3_graph1.png)
+
+As we can see a window has appeared however, this is not the graph we wanted. 
+
+<br>
+
+What to do to show the full graph?
+
+<br>
+
+When you expand the window, you will see a "Tools" tab on the left. Click on it.
+
+![problem3_info1](images/problem3_info1.png)
+
+Then click on the "Basic Fitting" options.
+
+![problem3_info2](images/problem3_info2.png)
+
+After a while, a window will appear in the lower right corner.
+
+![problem3_info3](images/problem3_info3.png)
+
+Here we select all the options that are necessary for our chart. I personally mark in "TYPES OF FIT" the option "Linear" and "Quadratic".
+
+![problem3_info4](images/problem3_info4.png)
+
+After checking these options, our window should look more or less like the one below. In "FIT RESULTS" we can show or hide detailed information on the chart, change the accuracy range and more.
+
+<br>
+
+Now our graph should look more or less like the following.
+
+![problem3_info5](images/problem3_info5.png)
+
+
+
+
 
 <br>
 
@@ -174,4 +256,4 @@ t - temperature [°C]
 
 <br>
 
-The original text was in Polish. The task was translated using online translators.
+### The original text was in Polish. The task was translated using online translators.

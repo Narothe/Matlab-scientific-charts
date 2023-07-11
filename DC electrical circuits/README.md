@@ -230,6 +230,12 @@ To change the caption on the information table, double-click on the information 
 
 <br>
 
+### Analysis of the measurement for a resistor
+
+The results of the voltage to current ratio for a resistor in which the manufacturer declared a voltage of 100Ω (±10%) in the range from 0-12V indicates that an increase in voltage affects the simultaneous increase in current, which confirms for us the operation of the law of Ohm's I=U/R, i.e. that the current flowing through a conductor is directly proportional to the voltage applied between its ends.
+
+<br>
+
 <br>
 
 <br>

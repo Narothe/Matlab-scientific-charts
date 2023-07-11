@@ -130,9 +130,10 @@ clc;
 average_Uz_resistor = (0.50 + 1.00 + 1.50 + 2.00 + 2.50 + 3.00 + 3.50 + 4.00 + 4.50 + 5.00 + 5.50 + 6.00 + 6.50 + 7.00 + 7.50 + 8.00 + 8.50 + 9.00 + 9.50 + 10.00 + 10.50 + 11.00 + 11.50 + 12.00) / 24;
 average_Ur_resistor = (0.60 + 1.09 + 1.57 + 2.06 + 2.55 + 3.04 + 3.52 + 4.02 + 4.51 + 4.96 + 5.48 + 5.93 + 6.43 + 6.92 + 7.41 + 7.87 + 8.37 + 8.84 + 9.31 + 9.82 + 10.30 + 10.78 + 11.27 + 11.73) / 24;
 
+% % calculation of the difference
 average_resistor = average_Uz_resistor - average_Ur_resistor;
 
-
+% % show data
 fprintf("Average of Uz: %f\n", average_Uz_resistor);
 fprintf("Average of Ur: %f\n", average_Ur_resistor);
 fprintf("Average of the resistor: %f\n", average_resistor);

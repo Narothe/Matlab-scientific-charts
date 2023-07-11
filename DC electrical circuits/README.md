@@ -224,9 +224,9 @@ Now our graph should look more or less like the following.
 
 ![problem3_info5](images/problem3_info5.png)
 
+To change the caption on the information table, double-click on the information you want to change. You can also change its position by dragging this table to any place. in addition, using the scrollbar you can zoom in or out of the chart. By holding down the left mouse button, you can also align the chart so that it always shows in the position you want it to. For the example below I have changed the above mentioned things.
 
-
-
+![problem3_info6](images/problem3_info6.png)
 
 <br>
 

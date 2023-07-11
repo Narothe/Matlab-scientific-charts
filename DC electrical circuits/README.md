@@ -66,12 +66,58 @@ To calculate the resistance you need to use the resistance formula. This formula
 
 <br>
 
-The calculations are shown in "CALCULATION OF RESISTANCE." After the calculation, we complete the table.
+### Solution:
+
+```matlab
+% % /===========================\
+% % | CALCULATION OF RESISTANCE |
+% % \===========================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+Ur = [0.60 1.09 1.57 2.06 2.55 3.04 3.52 4.02 4.51 4.96 5.48 5.93 6.43 6.92 7.41 7.87 8.37 8.84 9.31 9.82 10.30 10.78 11.27 11.73];
+Ir = [6.00 11.00 15.90 20.90 25.90 30.80 35.70 40.70 45.70 50.20 55.40 60.00 64.90 69.90 74.90 79.50 84.40 89.10 93.90 99.00 103.70 108.50 113.30 117.90];
+
+% % calculations
+R = Ur ./ Ir * 1000;
+
+% % rounding to 2 decimal places
+R = round(R, 2);
+
+% % display of result
+disp(R);
+```
+
+After the calculation, we complete the table.
 
 ![Photo1](images/photo1.png)
 
+Where: <br>
+Nr. - ordinal order <br>
+Uz - bulb voltage [V] <br>
+Ur - resistor voltage [V] <br>
+Ir - resistor current [mA] <br>
+R - electrical resistance [Ω] <br>
+
 <br>
 
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 Bulb test
 

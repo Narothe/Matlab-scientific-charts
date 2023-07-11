@@ -92,6 +92,9 @@ R = round(R, 2);
 disp(R);
 ```
 
+![problem1_solution](images/problem1_solution.png)
+
+
 After the calculation, we complete the table.
 
 ![Photo1](images/photo1.png)

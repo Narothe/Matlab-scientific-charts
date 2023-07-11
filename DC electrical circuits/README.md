@@ -238,6 +238,8 @@ The results of the voltage to current ratio for a resistor in which the manufact
 
 <br>
 
+In the rest of the solution, I will not show how to enable the appropriate settings for graphs. I recommend that you acquire this knowledge or return to this point.
+
 <br>
 
 <br>

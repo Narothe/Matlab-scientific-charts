@@ -238,9 +238,57 @@ The results of the voltage to current ratio for a resistor in which the manufact
 
 <br>
 
-In the rest of the solution, I will not show how to enable the appropriate settings for graphs. I recommend that you acquire this knowledge or return to this point.
+### In the rest of the solution, I will not show how to enable the appropriate settings for graphs. I recommend that you acquire this knowledge or return to this point.
 
 <br>
+
+## Fourth problem: measurement uncertainties
+
+### Graph of measurement uncertainties as a function of voltage versus current for a resistor
+
+We want to show the measurement uncertainties against "Uz[V]", "Ur[V]" and Ir[mA]. 
+
+### Solution:
+
+```matlab
+% % /==========================\
+% % | MEASUREMENT UNCERTAINTIES|
+% % \==========================/
+
+% % Graph of measurement uncertainties as a function of voltage versus current for a resistor
+
+% % close and clear
+clear all
+close all
+clc
+
+% % input data
+% % U - electrical voltage [V]
+% % I - electric current [mA]
+Uz = [0.50 1.00 1.50 2.00 2.50 3.00 3.50 4.00 4.50 5.00 5.50 6.00 6.50 7.00 7.50 8.00 8.50 9.00 9.50 10.00 10.50 11.00 11.50 12.00];
+Ur = [0.60 1.09 1.57 2.06 2.55 3.04 3.52 4.02 4.51 4.96 5.48 5.93 6.43 6.92 7.41 7.87 8.37 8.84 9.31 9.82 10.30 10.78 11.27 11.73];
+Ir = [6.00 11.00 15.90 20.90 25.90 30.80 35.70 40.70 45.70 50.20 55.40 60.00 64.90 69.90 74.90 79.50 84.40 89.10 93.90 99.00 103.70 108.50 113.30 117.90];
+
+% % plot drawing
+scatter(Ir, Uz,Color='k', LineWidth=2)
+grid on
+hold on
+scatter(Ir, Ur,'*',Color='k', LineWidth=1)
+hold off
+
+% % captions for the graph
+title('Graph of measurement uncertainties as a function of voltage versus current for a resistor', 'FontSize',22);
+xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
+ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
+```
+
+### The result:
+
+![problem4](images/problem4.png)
+
+<br>
+
+
 
 <br>
 

@@ -112,7 +112,7 @@ R - electrical resistance [Ω] <br>
 
 <br>
 
-## Problem 1.2: calculating the average for a resistor
+## Problem 1.2: average calculation for resistor
 
 To calculate the average resistor, we need to add the values from the table and then divide by its amount. For this we will use the values from the table signed as "Uz[V]" and "Ur[V]".  On this occasion, we can calculate the difference of the given values.
 
@@ -257,9 +257,9 @@ We want to show the measurement uncertainties against "Uz[V]", "Ur[V]" and Ir[mA
 ### Solution:
 
 ```matlab
-% % /==========================\
-% % | MEASUREMENT UNCERTAINTIES|
-% % \==========================/
+% % /===========================\
+% % | MEASUREMENT UNCERTAINTIES |
+% % \===========================/
 
 % % Graph of measurement uncertainties as a function of voltage versus current for a resistor
 

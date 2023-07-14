@@ -62,7 +62,7 @@ R - electrical resistance [Ω] <br>
 
 <br>
 
-## First problem: calculation of resistance
+## Problem 1.1: calculation of resistance
 
 To calculate the resistance you need to use the resistance formula. This formula is given in "additional formulas". Then substitute for the letter "U" the results from the measurements "Ur[V]" and for the letter I the results from the measurements "Ir[mA]". At the very end, we must remember that the results from the measurements of "Ir" are given in "[mA]". This means that we have to multiply the result times 1000 to get the value expressed in "[A]".
 
@@ -112,7 +112,7 @@ R - electrical resistance [Ω] <br>
 
 <br>
 
-## Second problem: calculating the average for a resistor
+## Problem 1.2: calculating the average for a resistor
 
 To calculate the average resistor, we need to add the values from the table and then divide by its amount. For this we will use the values from the table signed as "Uz[V]" and "Ur[V]".  On this occasion, we can calculate the difference of the given values.
 
@@ -147,7 +147,7 @@ fprintf("Average of the resistor: %f\n", average_resistor);
 
 <br>
 
-## Third problem: measurement relationships
+## Problem 1.3: measurement relationships
 
 ### Linear regression of the voltage-amperage relationship for a resistor
 
@@ -248,7 +248,7 @@ The results of the voltage to current ratio for a resistor in which the manufact
 
 <br>
 
-## Fourth problem: measurement uncertainties
+## Problem 1.4: measurement uncertainties
 
 ### Graph of measurement uncertainties as a function of voltage versus current for a resistor
 
@@ -304,7 +304,11 @@ Analyzing the results in the chart above, it can be seen that the Uz and UR poin
 
 <br>
 
-### Start of the second part of the experiment - Testing the light bulb
+<br>
+
+## Start of the second part of the experiment - Testing the light bulb
+
+Results after testing the light bulb
 
 ![Photo2](images/photo2.png)
 
@@ -315,6 +319,8 @@ Ur - resistor voltage [V] <br>
 Ir - resistor current [mA] <br>
 R - electrical resistance [Ω] <br>
 t - temperature [°C]
+
+## Problem 2.1: calculation of resistance
 
 <br>
 

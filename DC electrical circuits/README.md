@@ -45,7 +45,9 @@
 
 <br>
 
-## Start of the experiment
+## Start of the first part of the experiment - testing the resistor
+
+
 
 Results after testing the resistor Rt = 100 Ω ± 10 Ω 
 
@@ -302,7 +304,7 @@ Analyzing the results in the chart above, it can be seen that the Uz and UR poin
 
 <br>
 
-Bulb test
+### Start of the second part of the experiment - Testing the light bulb
 
 ![Photo2](images/photo2.png)
 

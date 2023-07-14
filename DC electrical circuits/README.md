@@ -238,7 +238,11 @@ The results of the voltage to current ratio for a resistor in which the manufact
 
 <br>
 
+<br>
+
 ### In the rest of the solution, I will not show how to enable the appropriate settings for graphs. I recommend that you acquire this knowledge or return to this point.
+
+<br>
 
 <br>
 
@@ -288,7 +292,9 @@ ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
 
 <br>
 
+### Uncertainty analysis of voltage-amperage relationship measurements for a resistor
 
+Analyzing the results in the chart above, it can be seen that the Uz and UR points differ from each other as this is due to the uncertainty of the measurement hardware.
 
 <br>
 

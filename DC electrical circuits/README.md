@@ -322,6 +322,45 @@ t - temperature [°C]
 
 ## Problem 2.1: calculation of resistance
 
+To calculate the resistance you need to use the resistance formula. This formula is given in "additional formulas". Then substitute for the letter "U" the results from the measurements "Ur[V]" and for the letter I the results from the measurements "Ir[mA]". At the very end, we must remember that the results from the measurements of "Ir" are given in "[mA]". This means that we have to multiply the result times 1000 to get the value expressed in "[A]".
+
+### Solution:
+
+```matlab
+% % /===========================\
+% % | CALCULATION OF RESISTANCE |
+% % \===========================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+% % U - electrical voltage [V]
+% % I - electric current [mA]
+Ur = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
+Ir = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+
+% % calculations
+R = Ur ./ Ir * 1000;
+
+% % rounding to 2 decimal places
+R = round(R, 2);
+
+% % display of result
+disp(R);
+```
+
+### The result:
+
+![problem2.1_solution](images/problem2.1_solution.png)
+
+<br>
+
+After the calculation, we complete the table:
+
+
 <br>
 
 <br>

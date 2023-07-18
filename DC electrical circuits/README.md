@@ -47,8 +47,6 @@
 
 ## Start of the first part of the experiment - testing the resistor
 
-
-
 Results after testing the resistor Rt = 100 Ω ± 10 Ω 
 
 ![Photo3](images/photo3.png)
@@ -359,6 +357,12 @@ disp(R);
 <br>
 
 After the calculation, we complete the table:
+
+![photo2.1](images/photo2.1.png)
+
+<br>
+
+
 
 
 <br>

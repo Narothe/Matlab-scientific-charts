@@ -294,7 +294,7 @@ ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
 
 ### Uncertainty analysis of voltage-amperage relationship measurements for a resistor
 
-Analyzing the results in the chart above, it can be seen that the Uz and UR points differ from each other as this is due to the uncertainty of the measurement hardware.
+Analyzing the results in the chart above, it can be seen that the Uz and Ur points differ from each other as this is due to the uncertainty of the measurement hardware.
 
 <br>
 
@@ -359,6 +359,55 @@ disp(R);
 After the calculation, we complete the table:
 
 ![photo2.1](images/photo2.1.png)
+
+Where: <br>
+Nr. - ordinal order <br>
+Uz - bulb voltage [V] <br>
+Ur - resistor voltage [V] <br>
+Ir - resistor current [mA] <br>
+R - electrical resistance [Ω] <br>
+t - temperature [°C]
+
+## Problem 2.2: calculation of temperature
+
+
+
+
+
+
+## Problem 2.3: average calculation for light bulb
+
+To calculate the average resistance of light bulb, we need to add the values from the table and then divide by its amount. For this we will use the values from the table signed as "Uz[V]" and "Ur[V]". On this occasion, we can calculate the difference of the given values.
+
+### Solution:
+
+```matlab
+% % /====================================\
+% % | AVERAGE CALCULATION FOR LIGHT BULB |
+% % \====================================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % calculation of the average
+average_Uz_bulb = (0.50 + 1.00 + 1.50 + 2.00 + 2.50 + 3.00 + 3.50 + 4.00 + 4.50 + 5.00 + 5.50 + 6.00) / 12;
+average_Ur_bulb = (0.49 + 0.96 + 1.42 + 1.90 + 2.32 + 2.76 + 3.43 + 3.93 + 4.44 + 4.91 + 5.35 + 5.83) / 12;
+
+% % calculation of the difference
+average_bulb = average_Uz_bulb - average_Ur_bulb;
+
+% % show data
+fprintf("Average of Uz: %f\n", average_Uz_bulb);
+fprintf("Average of Ur: %f\n", average_Ur_bulb);
+fprintf("Average of the resistor: %f\n", average_bulb);
+```
+
+### The result:
+
+![problem2.3_solution](images/problem2.3_solution.png)
+
 
 <br>
 

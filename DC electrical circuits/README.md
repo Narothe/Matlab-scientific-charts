@@ -434,7 +434,7 @@ end
 
 After the calculation, we complete the table:
 
-![photo2.2](images/photo2.1.png)
+![photo2.2](images/photo2.2.png)
 
 Where: <br>
 Nr. - ordinal order <br>

@@ -401,6 +401,7 @@ R = round(R, 2);
 
 % % display of result R with numbering
 fprintf("R:\n");
+
 for i = 1:numel(R)
     fprintf("R%d: %.2f\n", i, R(i));
 end
@@ -419,6 +420,7 @@ t = round(t, 2);
 
 % % display of result t with numbering
 fprintf("\nt:\n");
+
 for i = 1:numel(t)
     fprintf("t%d: %.2f\n", i, t(i));
 end

@@ -370,10 +370,77 @@ t - temperature [°C]
 
 ## Problem 2.2: calculation of temperature
 
+We will use part of the code we saw above to calculate the temperature of the bulb. From this we will be able to calculate the temperature. We will calculate the temperature from the formula that was given at the very beginning.
+
+### Solution:
+
+```matlab
+% % /===========================\
+% % | TEMPERATURE OF LIGHT BULB |
+% % \===========================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % Set format to display full precision (scientific notation)
+format long g; 
+
+% % input data
+% % Ur - electrical voltage [V]
+% % Ir - electric current [mA]
+Ur = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
+Ir = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+
+% % calculations
+R = Ur ./ Ir * 1000;
+
+% % rounding to 2 decimal places
+R = round(R, 2);
+
+% % display of result R with numbering
+fprintf("R:\n");
+for i = 1:numel(R)
+    fprintf("R%d: %.2f\n", i, R(i));
+end
 
 
+% % Constants for the formula
+t0 = 25;
+a = 0.0051;
+R0 = 2.1;
 
+% % Calculate t for each resistance value in the array
+t = (((R / R0) - 1) / a) + t0;
 
+% % rounding to 2 decimal places
+t = round(t, 2);
+
+% % display of result t with numbering
+fprintf("\nt:\n");
+for i = 1:numel(t)
+    fprintf("t%d: %.2f\n", i, t(i));
+end
+```
+
+### The result:
+
+![problem2.2](images/problem2.2.png)
+
+<br>
+
+After the calculation, we complete the table:
+
+![photo2.2](images/photo2.1.png)
+
+Where: <br>
+Nr. - ordinal order <br>
+Uz - bulb voltage [V] <br>
+Ur - resistor voltage [V] <br>
+Ir - resistor current [mA] <br>
+R - electrical resistance [Ω] <br>
+t - temperature [°C]
 
 ## Problem 2.3: average calculation for light bulb
 

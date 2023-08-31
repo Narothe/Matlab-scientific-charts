@@ -166,29 +166,29 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 
 
-% % /===========================\
-% % | CALCULATION OF RESISTANCE |
-% % \===========================/
-
-% % close and clear
-clear all;
-close all;
-clc;
-
-% % input data
-% % U - electrical voltage [V]
-% % I - electric current [mA]
-Ur = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
-Ir = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
-
-% % calculations
-R = Ur ./ Ir * 1000;
-
-% % rounding to 2 decimal places
-R = round(R, 2);
-
-% % display of result
-disp(R);
+% % % /===========================\
+% % % | CALCULATION OF RESISTANCE |
+% % % \===========================/
+% 
+% % % close and clear
+% clear all;
+% close all;
+% clc;
+% 
+% % % input data
+% % % U - electrical voltage [V]
+% % % I - electric current [mA]
+% Ur = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
+% Ir = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+% 
+% % % calculations
+% R = Ur ./ Ir * 1000;
+% 
+% % % rounding to 2 decimal places
+% R = round(R, 2);
+% 
+% % % display of result
+% disp(R);
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
@@ -359,24 +359,24 @@ disp(R);
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 
 
-% % /===================\
-% % | LINEAR REGRESSION |
-% % \===================/
-
-% % close and clear
-clear all;
-close all;
-clc;
-
-% % input data
-u = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
-i = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
-
-% % plot drawing
-axes('FontSize', 20, 'NextPlot', 'add');
-grid on
-scatter(i,u,Color='k', LineWidth=2)
-title('Voltage-amperage relationship graph for an incandescent light bulb', 'FontSize',22);
-xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
-ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
+% % % /===================\
+% % % | LINEAR REGRESSION |
+% % % \===================/
+% 
+% % % close and clear
+% clear all;
+% close all;
+% clc;
+% 
+% % % input data
+% u = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
+% i = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+% 
+% % % plot drawing
+% axes('FontSize', 20, 'NextPlot', 'add');
+% grid on
+% scatter(i,u,Color='k', LineWidth=2)
+% title('Voltage-amperage relationship graph for an incandescent light bulb', 'FontSize',22);
+% xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
+% ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
 

@@ -477,8 +477,45 @@ fprintf("Average of the resistor: %f\n", average_bulb);
 
 ![problem2.3_solution](images/problem2.3_solution.png)
 
+## Problem 2.4: measurement uncertainties
 
-<br>
+### Voltage vs. amperage measurement uncertainty graph for an incandescent light bulb.
+
+We want to show the measurement uncertainties against "Uz[V]", "Ur[V]" and Ir[mA]. 
+
+```matlab
+% % /===================================================================================\
+% % | Voltage vs. amperage measurement uncertainty graph for an incandescent light bulb |
+% % \===================================================================================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+% % U - electrical voltage [V]
+% % I - electric current [mA]
+Uz = [0.50 1.00 1.50 2.00 2.50 3.00 3.50 4.00 4.50 5.00 5.50 6.00];
+Ir = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+Ur = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
+
+% % plot drawing
+scatter(Ir, Uz, Color='k', LineWidth=2)
+grid on
+hold on
+scatter(Ir, Ur, '*', Color='k', LineWidth=1)
+hold off
+
+% % captions for the graph
+title('Voltage vs. amperage measurement uncertainty graph for an incandescent light bulb', 'FontSize',22);
+xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
+ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
+```
+
+### The result:
+
+![problem5](images/problem2.3_solution.png)
 
 
 

@@ -483,6 +483,8 @@ fprintf("Average of the resistor: %f\n", average_bulb);
 
 We want to show the measurement uncertainties against "Uz[V]", "Ur[V]" and Ir[mA]. 
 
+### Solution:
+
 ```matlab
 % % /===================================================================================\
 % % | Voltage vs. amperage measurement uncertainty graph for an incandescent light bulb |
@@ -515,10 +517,52 @@ ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
 
 ### The result:
 
-![problem5](images/problem2.3_solution.png)
+![problem5](images/problem5.png)
 
+Analysis of measurement uncertainty for the tungsten bulb - from the above data it can be concluded that the voltage Uz and UR differ from each other and this is due to the measurement uncertainty of the various tools that verify the measurements.
 
+<br>
 
+Uz - the voltage indicated by the device(battery), UR - the voltage indicated by the voltmeter.
+
+## Problem 2.5: temperature and intensity
+
+### Temperature-intensity relationship graph for an incandescent bulb
+
+### Solution:
+
+```matlab
+% % /===========================\
+% % | TEMPERATURE AND INTENSITY |
+% % \===========================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+R = [408.00 640.31 806.51 943.77 1033.40 1131.44 1251.89 1345.26 1429.30 1502.12 1569.35 1638.00];
+Ir = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+
+% % plot drawing
+axes('FontSize', 20, 'NextPlot', 'add');
+grid on
+scatter(Ir, R, Color='k', LineWidth=2)
+title('Temperature-intensity relationship graph for an incandescent bulb', 'FontSize',22);
+xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
+ylabel('T[°C]', 'FontSize',22, 'FontWeight','bold');
+```
+
+### The result:
+
+![problem6](images/problem6.png)
+
+Looking at the above graph, it can be concluded that as the intensity increases, the temperature increases.
+
+<br>
+
+T - temperature which was calculated from the formula.
 
 <br>
 

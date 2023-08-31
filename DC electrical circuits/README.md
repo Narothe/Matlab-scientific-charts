@@ -564,6 +564,83 @@ Looking at the above graph, it can be concluded that as the intensity increases,
 
 T - temperature which was calculated from the formula.
 
+## Problem 2.6: average bulb resistance vs. manufacturer
+
+### Average resistance vs. manufacturer's stated resistance of the resistor.
+
+### Solution:
+
+```matlab
+% % /==========================================\
+% % | AVERAGE BULB RESISTANCE VS. MANUFACTURER |
+% % \==========================================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+t = (100.67 + 99.09 + 98.74 + 98.56 + 98.46 + 98.70 + 98.60 + 98.77 + 98.69 + 98.80 + 98.92 + 98.83 + 99.08 + 99.00 + 98.93 + 98.99 + 99.17 + 99.21 + 99.15 + 99.19 + 99.32 + 99.35 + 99.47 + 99.49)/24
+v = 100.00
+x=98.5:100.5;
+y=0;
+
+% % plot drawing
+grid on
+hold on
+plot(x,y*ones(size(x)));
+scatter(t,0,Color='k', LineWidth=2);
+scatter(v,0,Color='k', LineWidth=2);% scatter(t,v,Color='k', LineWidth=2)
+title('Average resistance vs. manufacturers stated resistance of the resistor', 'FontSize',22);
+legend({'- axis','- average resistance of the resistor','- resistance of the resistor as specified by the manufacturer'});
+xlabel('R[Ω]', 'FontSize',22, 'FontWeight','bold');
+```
+
+![problem7](images/problem7.png)
+
+![problem2.6_solution](images/problem2.6_solution.png)
+
+The graph shows the average of the resistance from our measurements versus the resistance of the resistor that the manufacturer states. The resistor meets the characteristics that the manufacturer, that is, it falls within the range of 100Ω ± 10Ω. From the graph, you can read that the resistance is only close to 100Ω.
+
+## Problem 2.7: linear regression
+
+### Linear regression of the voltage vs. intensity relationship for an incandescent light bulb.
+
+### Solution:
+
+```matlab
+% % /===================\
+% % | LINEAR REGRESSION |
+% % \===================/
+
+% % close and clear
+clear all;
+close all;
+clc;
+
+% % input data
+u = [0.49 0.96 1.42 1.90 2.32 2.76 3.43 3.93 4.44 4.91 5.35 5.83];
+i = [79.00 109.80 135.80 159.10 179.80 197.80 225.00 242.00 259.00 274.00 287.00 301.00];
+
+% % plot drawing
+axes('FontSize', 20, 'NextPlot', 'add');
+grid on
+scatter(i,u,Color='k', LineWidth=2)
+title('Wykres zależności napięcia od natężenia dla żarówki', 'FontSize',22);
+xlabel('I[mA]', 'FontSize',22, 'FontWeight','bold');
+ylabel('U[V]', 'FontSize',22, 'FontWeight','bold');
+```
+
+![problem8](images/problem8.png)
+
+Analysis of the measurement for a tungsten bulb - the results of the voltage to current ratio for the bulb in the range from 0-6V, compared to the
+analysis of the resistor, the measurement results for the incandescent bulb does not increase proportionally (voltage and amperage). It follows that in this case Ohm's law does not apply. Why? Because we are dealing with the specific resistance depending on the temperature of the bulb(the higher the temperature the higher the resistance).
+
+<br>
+
+UR - the voltage indicated by the voltmeter.
+
 <br>
 
 <br>
